@@ -3534,7 +3534,6 @@ input::-moz-focus-inner {
 }
 
 .s-hero__bg {
-  background-image: url(./src/assets/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -4103,7 +4102,6 @@ html.no-csstransitions .s-hero__content {
 }
 
 .s-about__photo {
-  background-image: url(./src/assets/about.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

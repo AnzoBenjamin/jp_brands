@@ -22,7 +22,7 @@ const Footer = () => {
         
                         <ul className="s-footer__list">
                             <li><a href="https://www.facebook.com/jp.extra.brands/">Facebook</a></li>
-                            <li><a href="https://wa.me/+25677711200">Whatsapp</a></li>
+                            <li><a href="https://wa.me/+256777111200">Whatsapp</a></li>
                             <li><a href="https://www.instagram.com/jpextra_brands/">Instagram</a></li>
                         </ul>
                     </div>

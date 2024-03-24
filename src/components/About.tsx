@@ -1,3 +1,4 @@
+import aboutImg from "../assets/about.jpg";
 const About = () => {
   return (
     <section id="about" className="s-about">
@@ -26,7 +27,11 @@ const About = () => {
         </div>
 
         <div className="column large-6 w-900-stack s-about__photo-block">
-          <div className="s-about__photo" data-aos="fade-up"></div>
+          <div
+            className="s-about__photo"
+            data-aos="fade-up"
+            style={{ backgroundImage: `url(${aboutImg})` }}
+          ></div>
         </div>
       </div>
 
