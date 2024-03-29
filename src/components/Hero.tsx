@@ -5,22 +5,27 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import heroBg from "../assets/hero-bg.jpg";
-
+import Reveal from "./Reveal";
 const Hero = () => {
   return (
     <section id="hero" className="s-hero target-section">
-      <div className="s-hero__bg" style={{ backgroundImage:`url(${heroBg})` }}>
+      <div className="s-hero__bg" style={{ backgroundImage: `url(${heroBg})` }}>
         <div className="gradient-overlay"></div>
       </div>
 
       <div className="row s-hero__content">
         <div className="column">
-          <h1>Hello.</h1>
+          <Reveal>
+            <h1>Hello.</h1>
+          </Reveal>
           <div className="s-hero__content-about">
+            <Reveal>
+
             <p>
               We are JP Brands. We love <br />
               building great brands <br />& design experiences.
             </p>
+            </Reveal>
 
             <footer>
               <div className="s-hero__content-social">
