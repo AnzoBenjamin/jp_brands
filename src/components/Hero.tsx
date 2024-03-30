@@ -5,7 +5,7 @@ import {
   faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 import heroBg from "../assets/hero-bg.jpg";
-import Reveal from "./Reveal";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 const Hero = () => {
   return (
     <section id="hero" className="s-hero target-section">
@@ -15,17 +15,13 @@ const Hero = () => {
 
       <div className="row s-hero__content">
         <div className="column">
-          <Reveal>
             <h1>Hello.</h1>
-          </Reveal>
           <div className="s-hero__content-about">
-            <Reveal>
 
             <p>
               We are JP Brands. We love <br />
               building great brands <br />& design experiences.
             </p>
-            </Reveal>
 
             <footer>
               <div className="s-hero__content-social">
@@ -49,6 +45,9 @@ const Hero = () => {
                     className="fab"
                     aria-hidden="true"
                   />
+                </a>
+                <a href="tel:+256705574060">
+                  <FontAwesomeIcon icon={faPhone} className="fab" aria-hidden="true"/>
                 </a>
               </div>
             </footer>
