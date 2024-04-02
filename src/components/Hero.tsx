@@ -19,7 +19,7 @@ const Hero = () => {
           <div className="s-hero__content-about">
 
             <p>
-              We are JP Brands. We love <br />
+              We are JP Extra Brands. We love <br />
               building great brands <br />& design experiences.
             </p>
 

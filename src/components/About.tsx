@@ -23,11 +23,7 @@ const About = () => {
           </Reveal>
           <Reveal>
             <p className="lead" data-aos="fade-up">
-              We believe a strong brand is more than a logo; it's a strategic
-              narrative that ignites customer connection and propels growth.
-              Through in-depth research, creative vision, and collaborative
-              spirit, we craft impactful brands that resonate with your target
-              audience and leave a lasting impression.{" "}
+              Our confidence is that we are a brand that exceeds expectations, based on experience, sound branding strategies and intergration. Everything we do roots on the belief that, "Excellent works are the best salesman for us."
             </p>
           </Reveal>
         </div>
