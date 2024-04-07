@@ -9,7 +9,7 @@ const Contact = () => {
                 <h1 className="display-1">
                 Have an idea or an epic project in mind? Talk to
                 us. Let us work together and make something great.
-                Shoot us a message at
+                Email us at
                 </h1>
             </div>
         </div>

@@ -23,7 +23,10 @@ const About = () => {
           </Reveal>
           <Reveal>
             <p className="lead" data-aos="fade-up">
-              Our confidence is that we are a brand that exceeds expectations, based on experience, sound branding strategies and intergration. Everything we do roots on the belief that, "Excellent works are the best salesman for us."
+              Our confidence is that we are a brand that exceeds expectations,
+              based on experience, sound branding strategies and intergration.
+              Everything we do, roots on the belief that, "Excellent work is the
+              best salesman for us."
             </p>
           </Reveal>
         </div>

@@ -51,7 +51,7 @@ const Services = () => {
           <Reveal>
             <p>
               We translate your brand strategy into a visually compelling
-              identity. This includes designing a logo that's both memorable and
+              identity. This includes designing a logo that is both memorable and
               meaningful, developing a brand style guide to ensure consistent
               presentation across all platforms, and crafting a unique voice and
               tone that reflects your brand personality and connects with your

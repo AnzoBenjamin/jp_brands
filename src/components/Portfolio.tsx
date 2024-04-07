@@ -16,6 +16,15 @@ import imageThirteen from "../assets/13.jpg";
 import imageFourteen from "../assets/14.jpg";
 import imageFifteen from "../assets/15.jpg";
 import imageSixteen from "../assets/16.jpg";
+import imageSeventeen from "../assets/17.jpg";
+import imageEighteen from "../assets/18.jpg";
+import imageNighteen from "../assets/19.jpg";
+import imageTwenty from "../assets/20.jpg";
+import imageTwentyOne from "../assets/21.jpg";
+import imageTwentyTwo from "../assets/22.jpg";
+import imageTwentyThree from "../assets/23.jpg";
+import imageTwentyFour from "../assets/24.jpg";
+
 import Reveal from "./Reveal";
 import { motion, useInView, useAnimation } from "framer-motion";
 
@@ -36,6 +45,14 @@ const images = [
   imageFourteen,
   imageFifteen,
   imageSixteen,
+  imageSeventeen,
+  imageEighteen,
+  imageNighteen,
+  imageTwenty,
+  imageTwentyOne,
+  imageTwentyTwo,
+  imageTwentyThree,
+  imageTwentyFour,
 ];
 const Portfolio = () => {
   const [isExpandedIndex, setIsExpandedIndex] = useState(-1); // -1 indicates none expanded initially
@@ -71,7 +88,7 @@ const Portfolio = () => {
     setIsExpandedIndex(-1);
     setIsClicked(false);
   };
-const overlayElement = document.getElementById("overlay");
+  const overlayElement = document.getElementById("overlay");
   return (
     <section id="portfolio" className="s-portfolio">
       <div className="row s-porfolio__top">
@@ -91,7 +108,11 @@ const overlayElement = document.getElementById("overlay");
           </Reveal>
         </div>
       </div>
-      <motion.div className="gallery" ref={imageRef} transition={{staggerChildren:0.15}}>
+      <motion.div
+        className="gallery"
+        ref={imageRef}
+        transition={{ staggerChildren: 0.15 }}
+      >
         <div id="overlay"></div>
 
         {images.map((image, index) => {
@@ -109,11 +130,11 @@ const overlayElement = document.getElementById("overlay");
               }}
               initial="hidden"
               animate={mainControls}
-              transition={{ duration: 0.5, delay:index*0.1 }}
-              
+              transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <>
-                {isActive && overlayElement &&
+                {isActive &&
+                  overlayElement &&
                   createPortal(
                     <div className="overlay" onClick={handleOverlay}></div>,
                     overlayElement
@@ -121,7 +142,9 @@ const overlayElement = document.getElementById("overlay");
                 <div
                   className={`embed ${isActive ? "is-active" : ""}`}
                   onClick={() => handleClick(index)}
-                  ref={(el) => (embedRefs.current[index] = el as HTMLDivElement)}
+                  ref={(el) =>
+                    (embedRefs.current[index] = el as HTMLDivElement)
+                  }
                   style={isActive ? imageStyles : {}}
                 >
                   <img src={image} />
