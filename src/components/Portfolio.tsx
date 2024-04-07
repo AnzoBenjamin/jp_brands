@@ -102,7 +102,7 @@ const Portfolio = () => {
         <div className="column large-6 w-900-stack">
           <Reveal>
             <h1 className="display-1" data-aos="fade-up">
-              Here are some of our projects we done lately. Feel free to check
+              Here are some of our projects we have done lately. Feel free to check
               them out.
             </h1>
           </Reveal>
