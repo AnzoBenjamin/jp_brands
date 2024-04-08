@@ -33,7 +33,6 @@ const images = [
   imageTwo,
   imageThree,
   imageFour,
-  imageFive,
   imageSix,
   imageSeven,
   imageEight,
@@ -41,7 +40,6 @@ const images = [
   imageTen,
   imageEleven,
   imageTwelve,
-  imageThirteen,
   imageFourteen,
   imageFifteen,
   imageSixteen,
@@ -58,7 +56,6 @@ const Portfolio = () => {
   const [isExpandedIndex, setIsExpandedIndex] = useState(-1); // -1 indicates none expanded initially
   const [isClicked, setIsClicked] = useState(false);
   const [imageStyles, setImageStyles] = useState({});
-
   const embedRefs = useRef<HTMLDivElement[]>([]);
   const imageRef = useRef(null);
   const isInView = useInView(imageRef, { once: true });
@@ -69,7 +66,11 @@ const Portfolio = () => {
       mainControls.start("visible");
     }
   }, [isInView]);
+
   const handleClick = (index: number) => {
+    if(window.innerWidth<=458){
+      return setImageStyles({});
+    }
     setIsClicked(true);
     setIsExpandedIndex(index === isExpandedIndex ? -1 : index); // Toggle based on clicked index
     const rect = embedRefs.current[index].getBoundingClientRect();

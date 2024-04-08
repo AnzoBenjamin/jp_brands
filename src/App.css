@@ -4358,7 +4358,6 @@ html.no-csstransitions .s-hero__content {
   z-index: 20;
 }
 .embed.is-active > img {
-  filter: grayscale(0);
   opacity: 1;
   position: absolute;
   z-index: 20;
@@ -4381,6 +4380,14 @@ html.no-csstransitions .s-hero__content {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 5;
+}
+
+@media (max-width: 485px) {
+  .embed > img {
+    pointer-events: none;
+    opacity: 1;
+  }
+  
 }
 
 /* ===================================================================
